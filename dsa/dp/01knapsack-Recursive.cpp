@@ -2,7 +2,7 @@
 
 using namespace std;
 
-// 0 1 Knapsack 
+// 0 1 Knapsack  -- >> pattern - taken | notTaken
 int knapsack(vector<int> weight, vector<int> values, int n, int maxWeight) {
     if (n == 0 || maxWeight <= 0) {
         return 0;
@@ -18,7 +18,6 @@ int knapsack(vector<int> weight, vector<int> values, int n, int maxWeight) {
     } 
 
     return max(taken, notTaken);
-    
 }
 
 int main() {
@@ -29,11 +28,7 @@ int main() {
     vector<int> values{ 5, 4, 8, 6};
     int maxWeight = 5;
     int n = 4;
-    int value = 0;
-    // values
-
-    // pattern - take or not take
-
+    
     int maxValue = knapsack(weight, values, n-1, maxWeight);
     cout << "max value possible - " << maxValue;
     
