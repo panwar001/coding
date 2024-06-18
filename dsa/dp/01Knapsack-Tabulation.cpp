@@ -2,8 +2,8 @@
 
 using namespace std;
 
-// 0 1 Knapsack 
-int knapsack(vector<int> weight, vector<int> values, int n, int maxWeight, vector<vector<int>> dp) {
+// 0 1 Knapsack Bottom up approach
+int knapsack(vector<int> &weight, vector<int> &values, int n, int maxWeight, vector<vector<int>> &dp) {
     
     // Fill the first row for the weight of the first item - base condition
     for (int i = weight[0]; i <= maxWeight; i++) {
