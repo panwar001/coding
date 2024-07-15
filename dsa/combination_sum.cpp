@@ -1,18 +1,18 @@
 
 /* Problem link 
+https://leetcode.com/problems/combination-sum/description/
 https://www.geeksforgeeks.org/problems/combination-sum-1587115620/
 Given an array of distinct integers candidates and a target integer target, return a list of all unique combinations of candidates where the chosen numbers sum to target.
+input test case - 
+4
+7 2 6 5
+16 (target sum)
 */
 
 // TO-DO, this solution gives TLE, Use DP
 
 #include <bits/stdc++.h>
 using namespace std;
-
-// input test case - 
-// 4
-// 7 2 6 5
-// 16 (target sum)
 
 class Solution {
     
@@ -43,7 +43,6 @@ class Solution {
     //Function to return a list of indexes denoting the required 
     //combinations whose sum is equal to given number.
     vector<vector<int>> combinationSum(vector<int> &A, int B) {
-        // Your code here
         int sum = B;
         int n = A.size();
         vector<vector<int>> ans;
