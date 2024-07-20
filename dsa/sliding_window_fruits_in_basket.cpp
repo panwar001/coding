@@ -38,7 +38,7 @@ int main()
 {
     int n = 3;
     int K = 2;
-    int arr[] = { 1, 2, 1 };
+    vector<int> arr = { 1, 2, 1 };
  
     // Function call
     cout << totalFruits(n, arr);
