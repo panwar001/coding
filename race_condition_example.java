@@ -35,6 +35,15 @@ public class Main {
       }
       count++;
     }
+    // Using ReentrantLock to avoid race condition
+    public void incrementUsingLock() {
+      try {
+        lock.lock();
+        count++;
+      } finally {
+        lock.unlock();
+      }
+  }
     
   }
   
